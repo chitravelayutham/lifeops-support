@@ -1,31 +1,171 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>LifeOps Privacy Policy</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeOps Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 48px 40px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0a7ea4;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0a1628;
+      margin-bottom: 6px;
+    }
+    .updated {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 28px;
+    }
+    .tagline {
+      background: #e8f5e9;
+      border-left: 4px solid #2e7d32;
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-size: 15px;
+      color: #1b5e20;
+      margin-bottom: 36px;
+      line-height: 1.5;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .icon {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #0a1628;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 0 0 32px 0;
+    }
+    .contact-link {
+      color: #0a7ea4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-link:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+    }
+    @media (max-width: 520px) {
+      .container { padding: 32px 24px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
 <body>
-<h1>LifeOps Privacy Policy</h1>
-<p>Last updated: July 2, 2026</p>
+  <div class="container">
+    <div class="logo">LifeOps</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 2, 2026</p>
 
-<p>LifeOps does not collect, transmit, or share any personal data.</p>
+    <div class="tagline">
+      LifeOps is built on one principle: <strong>your data stays on your device.</strong> We do not collect, transmit, or share any personal information.
+    </div>
 
-<h2>Data Storage</h2>
-<p>All data you enter — documents, obligations, subscriptions — is stored locally on your device using AES-256-GCM encryption. Nothing is sent to any server or cloud.</p>
+    <hr class="divider">
 
-<h2>Biometrics</h2>
-<p>Face ID and Touch ID are handled entirely by iOS. LifeOps never accesses or stores biometric data.</p>
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">🔒</span>
+        <h2>Data Storage</h2>
+      </div>
+      <p>Everything you enter — documents, obligations, and subscriptions — is encrypted and stored locally on your device using AES-256-GCM encryption. Nothing is sent to any server or cloud service.</p>
+    </div>
 
-<h2>AI Assistant</h2>
-<p>The AI Assistant runs entirely on your device using Apple's on-device Foundation Models. Your queries and data never leave your device. On devices without Apple Intelligence, the app uses a built-in offline engine. The AI makes zero network calls.</p>
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">👤</span>
+        <h2>Biometrics</h2>
+      </div>
+      <p>Face ID and Touch ID are handled entirely by iOS. LifeOps never accesses, processes, or stores your biometric data.</p>
+    </div>
 
-<h2>Backup and Restore</h2>
-<p>Backup exports an encrypted .lox file to your local Files app using AES-256-GCM encryption with Argon2id key derivation. The file is protected by your master password and never uploaded anywhere. Restore reads the file directly from your device.</p>
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">🤖</span>
+        <h2>AI Assistant</h2>
+      </div>
+      <p>The AI Assistant runs entirely on your device using Apple's on-device Foundation Models. Your queries and data never leave your device. On devices without Apple Intelligence, the app uses a built-in offline engine. The AI makes zero network calls.</p>
+    </div>
 
-<h2>Network</h2>
-<p>LifeOps makes one anonymous network request at launch to check for emergency feature flags (https://flags.lifeops.app/v1/kill). No user data, device identifiers, or personal information is included in this request. The app functions normally if this endpoint is unreachable.</p>
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">💾</span>
+        <h2>Backup and Restore</h2>
+      </div>
+      <p>Backup exports an encrypted <code>.lox</code> file to your local Files app using AES-256-GCM encryption with Argon2id key derivation. The file is protected by your master password and never uploaded anywhere. Restore reads the file directly from your device.</p>
+    </div>
 
-<h2>Analytics</h2>
-<p>LifeOps contains no analytics, tracking, or advertising SDKs.</p>
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">🌐</span>
+        <h2>Network</h2>
+      </div>
+      <p>LifeOps makes one anonymous network request at launch to check for emergency feature flags (<code>https://flags.lifeops.app/v1/kill</code>). No user data, device identifiers, or personal information is included in this request. The app functions normally if this endpoint is unreachable.</p>
+    </div>
 
-<h2>Contact</h2>
-<p>Questions: <a href="https://github.com/chitravelayutham/lifeops-support/issues">github.com/chitravelayutham/lifeops-support/issues</a></p>
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">📊</span>
+        <h2>Analytics</h2>
+      </div>
+      <p>LifeOps contains no analytics, tracking, or advertising SDKs. We have no idea how you use the app — by design.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-header">
+        <span class="icon">✉️</span>
+        <h2>Contact</h2>
+      </div>
+      <p>Have a question or concern? <a class="contact-link" href="https://github.com/chitravelayutham/lifeops-support/issues">Open a support issue on GitHub</a>.</p>
+    </div>
+
+    <div class="footer">© 2026 Chitra Thakur · LifeOps</div>
+  </div>
 </body>
 </html>
