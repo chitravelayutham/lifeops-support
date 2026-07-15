@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LifeOps — Support</title>
+<meta name="description" content="Get help with LifeOps. Contact the founder directly, or read answers to common questions about privacy, reminders, backups, and recovery." />
+<style>
+  :root{
+    --ink:#0A1628; --ink-soft:#33405a; --paper:#FBF8F4; --card:#ffffff;
+    --accent:#006D6F; --tint:#C9EAE6; --tint-2:#E6F5F2; --line:#ECE7DF;
+    --shadow:0 20px 50px -20px rgba(10,22,40,.18); --radius:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  h1,h2,h3{color:var(--accent);line-height:1.2;letter-spacing:-.02em}
+
+  header{padding:64px 0 20px;text-align:center}
+  header img{width:78px;height:78px;border-radius:18px;box-shadow:0 8px 20px -8px rgba(10,22,40,.4)}
+  header h1{font-size:40px;margin:20px 0 10px}
+  header p{font-size:19px;color:var(--ink-soft);max-width:52ch;margin:0 auto}
+
+  .contact{background:var(--tint);border-radius:var(--radius);padding:34px;text-align:center;margin:34px 0;box-shadow:var(--shadow)}
+  .contact h2{font-size:24px;margin-bottom:8px}
+  .contact p{color:var(--ink-soft);margin-bottom:18px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:13px 26px;border-radius:999px;font-weight:700}
+  .btn:hover{text-decoration:none;opacity:.92}
+
+  section.faq{padding:20px 0 10px}
+  section.faq h2{font-size:26px;margin-bottom:8px;text-align:center}
+  .faq-sub{text-align:center;color:var(--ink-soft);margin-bottom:26px}
+  .qa{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-bottom:14px}
+  .qa h3{font-size:17px;margin-bottom:6px}
+  .qa p{font-size:15.5px;color:var(--ink-soft)}
+  .qa strong{color:var(--ink)}
+
+  .note{background:var(--tint-2);border-radius:16px;padding:24px;margin:26px 0;color:var(--ink-soft);font-size:15.5px}
+  .note strong{color:var(--ink)}
+
+  footer{border-top:1px solid var(--line);margin-top:30px;padding:28px 0 50px;text-align:center;color:var(--ink-soft);font-size:14.5px}
+  footer a{margin:0 8px}
+
+  @media (max-width:640px){ header h1{font-size:30px} .contact,.qa{padding:22px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img src="assets/app-icon.png" alt="LifeOps app icon" />
+    <h1>How can I help?</h1>
+    <p>LifeOps is built and maintained by one person — me. That means when you reach out, your message comes straight to me, and I read every one.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="contact">
+    <h2>Get in touch</h2>
+    <p>Questions, bugs, feature ideas, or just hello — I'd love to hear from you.</p>
+    <a class="btn" href="mailto:lifeops.app@gmail.com">Email lifeops.app@gmail.com</a>
+  </div>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+    <p class="faq-sub">A few things people often ask.</p>
+
+    <div class="qa">
+      <h3>Is my data really private?</h3>
+      <p>Yes. Your document files are stored on your device only, encrypted with a key based on your master password. Nothing is synced to a cloud or server, and no one else — including me — can read them.</p>
+    </div>
+
+    <div class="qa">
+      <h3>What happens if I forget my master password?</h3>
+      <p>When you first set up LifeOps, you're given a one-time <strong>recovery key</strong>. That key is the only way to regain access if you forget your password. Because everything is encrypted on your device with no cloud backup, please keep your recovery key somewhere safe — if both the password and the recovery key are lost, your vault can't be recovered. That's the trade-off for true privacy.</p>
+    </div>
+
+    <div class="qa">
+      <h3>How do reminders work?</h3>
+      <p>Add a document's expiry date or a deadline, and LifeOps reminds you at 30, 7, and 1 day before. You control the timing.</p>
+    </div>
+
+    <div class="qa">
+      <h3>Does it need an internet connection?</h3>
+      <p>No — LifeOps works fully offline. Everything runs on your device.</p>
+    </div>
+
+    <div class="qa">
+      <h3>Do I need an account?</h3>
+      <p>No account, no email sign-up, no login. You just set a master password on first launch.</p>
+    </div>
+
+    <div class="qa">
+      <h3>Can I back up or move my data to a new device?</h3>
+      <p>Yes. You can export an encrypted backup and restore it — and only you, with your password, can open it.</p>
+    </div>
+
+    <div class="qa">
+      <h3>How does the AI assistant work?</h3>
+      <p>You can ask things like "What's due this week?" It answers entirely on your device, with zero network calls — your questions never leave your phone.</p>
+    </div>
+
+    <div class="qa">
+      <h3>Is LifeOps free?</h3>
+      <p>Yes, LifeOps is free.</p>
+    </div>
+  </section>
+
+  <div class="note">
+    <strong>A note from me:</strong> I built LifeOps because I needed it myself, and I care a lot about getting it right. If something's confusing, broken, or missing, please tell me — your feedback genuinely shapes what I build next. — Chitra
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <a href="index.html">Home</a> ·
+    <a href="privacy">Privacy Policy</a> ·
+    <a href="mailto:lifeops.app@gmail.com">Contact</a>
+    <div style="margin-top:10px">© 2026 LifeOps · Built with care by Chitra</div>
+  </div>
+</footer>
+
+</body>
+</html>
